@@ -58,6 +58,12 @@ dodatkowe opcje
 ## 2.4 zatrzymanie minikube
     $ minikube stop
 
+## 2.5 dodatkowe komendy
+
+    minikube ssh - if you want to check that everything worked then you can shell into the minikube vm.
+    minikube stop - you should shut down the cluster before shutting down your Mac
+    minikube status - gives key status information
+    minikube ip - gives the IP address of your cluster
 
 
 
