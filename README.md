@@ -76,15 +76,25 @@ dodatkowe opcje
     
 powinsmy uzyskac informacje o uruchominych  serwisach    
 > service "faas-netesd" created
+
 > serviceaccount "faas-controller" created
+
 > deployment "faas-netesd" created
+
 > service "gateway" created
+
 > deployment "gateway" created
+
 > service "prometheus" created
+
 > deployment "prometheus" created
+
 > service "alertmanager" created
+
 > deployment "alertmanager" created
+
 > clusterrole "faas-controller" created
+
 > clusterrolebinding "faas-controller" created
 
 
