@@ -1,13 +1,13 @@
 Instalacja przeprowadzana na  maszynie virtualnej z ubuntu (pojawily sie problemy) oraz  na czystym ubuntu
 
 # 1. instalacja potrzebnych elementów
-## 1.1 instalacja minikube
+## 1.1 instalacja minikube https://github.com/kubernetes/minikube
 
     $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64  
     $ chmod +x minikube  
     $ sudo mv minikube /usr/local/bin/
 
-## 1.2 instalacja kubectl
+## 1.2 instalacja kubectl https://kubernetes.io/docs/tasks/tools/install-kubectl/
     $ curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
     $ chmod +x ./kubectl 
     $ sudo mv ./kubectl /usr/local/bin/kubectl
