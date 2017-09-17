@@ -65,5 +65,7 @@ dodatkowe opcje
     minikube status - gives key status information
     minikube ip - gives the IP address of your cluster
 
+## 3. Przygotowanie faas-netes
+
 
 
