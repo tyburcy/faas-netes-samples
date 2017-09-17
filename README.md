@@ -15,6 +15,15 @@ Instalacja przeprowadzana na  maszynie virtualnej z ubuntu (pojawily sie problem
 ## 1.3 instalacja virtualboxa
     $ sudo apt install virtualbox virtualbox-ext-pack
 
+## 1.4 instalacja qemu-kvm (opcjonalne)
+    # Install libvirt and qemu-kvm on your system, e.g.
+    $ sudo apt install libvirt-bin qemu-kvm
+    $ sudo usermod -a -G libvirtd $(whoami)
+    $ newgrp libvirtd
+    
+## instalacja dockera ubuntu ma starsza wersje - nie wiem czy potrzebne  (opcjonalne)
+    sudo apt-get update && sudo apt-get install -qy docker.io
+
 
 # 2. Podstawowe Komendy
 
@@ -38,6 +47,16 @@ dodatkowe opcje
     Hyper-V
     none - (LINUX ONLY) - the 'none' driver can be used to run the kubernetes cluster components on the host instead of in a VM. This can be useful for CI workloads which do not support nested virtualization.
 
+
+## 2.2 
+
+    $ kubectl config use-context minikube
+    
+## 2.3 odpalenie dasborda
+    $ minikube dashboard
+
+## 2.4 zatrzymanie minikube
+    $ minikube stop
 
 
 
