@@ -21,7 +21,7 @@ Instalacja przeprowadzana na  maszynie virtualnej z ubuntu (pojawily sie problem
     $ sudo usermod -a -G libvirtd $(whoami)
     $ newgrp libvirtd
     
-## instalacja dockera ubuntu ma starsza wersje - nie wiem czy potrzebne  (opcjonalne)
+## instalacja dockera ubuntu ma inna wersje - nie wiem czy potrzebne  (opcjonalne)
     sudo apt-get update && sudo apt-get install -qy docker.io
 
 
