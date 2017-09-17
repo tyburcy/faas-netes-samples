@@ -65,7 +65,30 @@ dodatkowe opcje
     minikube status - gives key status information
     minikube ip - gives the IP address of your cluster
 
-## 3. Przygotowanie faas-netes
+# 3. Przygotowanie faas-netes
+    $ git clone https://github.com/alexellis/faas-netes
+    
+## 4 Uruchamianie wszystkiego
+    $ minikube start
+    $ kubectl config use-context minikube
+    $ cd faas-netes
+    $ kubectl apply -f ./faas.yml,monitoring.yml,rbac.yml
+    
+powinsmy uzyskac informacje o uruchominych  serwisach    
+> service "faas-netesd" created
+> serviceaccount "faas-controller" created
+> deployment "faas-netesd" created
+> service "gateway" created
+> deployment "gateway" created
+> service "prometheus" created
+> deployment "prometheus" created
+> service "alertmanager" created
+> deployment "alertmanager" created
+> clusterrole "faas-controller" created
+> clusterrolebinding "faas-controller" created
+
+
+
 
 
 
