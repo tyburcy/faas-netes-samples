@@ -4,12 +4,17 @@
     $ git clone https://github.com/alexellis/faas-netes
     
  Uruchamianie wszystkiego
+
     $ minikube start
+
     $ kubectl config use-context minikube
+
     $ cd faas-netes
+
     $ kubectl apply -f ./faas.yml,monitoring.yml,rbac.yml
+
     
-powinsmy uzyskac informacje o uruchominych  serwisach    
+powinsmy uzyskac informacje o uruchominych  serwisach
 > service "faas-netesd" created
 
 > serviceaccount "faas-controller" created
