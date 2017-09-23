@@ -42,7 +42,7 @@ następnie sciagamy
 $ git clone https://github.com/tyburcy/faas-netes-samples.git
 
 
-# 2.Przykład z java
+# 2.Przykład z Java
 
     cd javahello/
 
@@ -66,9 +66,20 @@ lub z lini komend - zalecane :)
 
 curl -s --data "dodatkowe dane" http://$(minikube ip):31112/function/f-hello-java
 
+# 3.Przykład z Kotlin
+
+    cd kotlinhello
+
+    eval $(minikube docker-env)   -przechodzimy na dockera z minikuba
+
+    docker build -t hello-kotlin:v1 .   -tworzymy obraz
+    
+    kubectl run --labels="faas_function=f-hello-kotlin" f-hello-kotlin --port 8080 --image hello-kotlin:v1
 
 
+    kubectl expose deployment/f-hello-kotlin
 
-
+ 
+curl -s --data "dodatkowe dane" http://$(minikube ip):31112/function/f-hello-kotlin
 
 
